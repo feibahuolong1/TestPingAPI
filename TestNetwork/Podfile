@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+#use_frameworks!
+
+def pods
+pod 'AFNetworking', '~> 2.6'
+end
+target ’TestNetwork’ do
+pods
+end
