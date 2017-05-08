@@ -70,7 +70,7 @@
         [NetworkTool sharedInstance].httpRequest = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:[_baseArray objectAtIndex:i]] ];
         [NetworkTool sharedInstance].httpRequest.requestSerializer.cachePolicy = NSURLRequestUseProtocolCachePolicy;
         [NetworkTool sharedInstance].httpRequest.requestSerializer.timeoutInterval = 2;
-        [[NetworkTool sharedInstance].httpRequest.requestSerializer setValue:@"ganqianwangnewApp/1.8" forHTTPHeaderField:@"User-Agent"];
+        [[NetworkTool sharedInstance].httpRequest.requestSerializer setValue:@"1.8" forHTTPHeaderField:@"User-Agent"];
         [[NSHTTPCookieStorage sharedHTTPCookieStorage]setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
         
         // 开始请求的时间
